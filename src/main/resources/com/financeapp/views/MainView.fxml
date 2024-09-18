@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml" fx:controller="com.financeapp.controllers.MainController">
+    <Label text="Personal Finance Tracker" />
+    <TableView fx:id="transactionTable">
+        <columns>
+            <TableColumn text="Title" fx:id="titleColumn" />
+            <TableColumn text="Amount" fx:id="amountColumn" />
+            <TableColumn text="Date" fx:id="dateColumn" />
+            <TableColumn text="Category" fx:id="categoryColumn" />
+            <TableColumn text="Type" fx:id="typeColumn" />
+        </columns>
+    </TableView>
+    <Button text="Add Transaction" />
+</VBox>
